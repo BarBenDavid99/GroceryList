@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Grocery List</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="focus.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div class="groceries">
+      <h1>Grocery List</h1>
+      <form onsubmit="addItemToYourList(event)">
+        <label for="item-input"></label>
+        <input autocomplete="off" type="text" id="txtItem" placeholder="Enter Item's Name" required />
+        <br><br>
+        <label for="quantity-input">Quantity</label>
+        <input type="number" id="quantity-input" required />
+        <button type="submit">Add</button>
+      </form>
+
+      <h1>Your List:</h1>
+      <div id="itemsPlace">
+
+      </div>
+      <button onclick="clearAllItems()">Clear Items </button>
+      <button onclick="saveItems()">Save List</button>
+      <br />
+    </div>
+  </div>
+</body>
+
+</html>

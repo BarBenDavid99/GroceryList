@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body
+{
+  text-align: center;
+font-family: "Mumblers Demo";
+    direction: ltr;
+    background-image: url(Grocery.jpg);
+    background-repeat: none;;
+    background-size: cover;
+}
+input {
+ 
+  padding: 1em;
+} 
+button {
+  font-family:Arial;
+  border: 0;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0.75em 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+#container{
+  border: none;
+  width: 90%;
+  margin: auto;
+  display: flex;
+ 
+}
+.groceries{
+ width: 600px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: white;
+  box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.5);
+
+}
+#txtItem
+{
+font-family: inherit;
+outline: 0;
+border: 0;
+border-bottom: 3px solid black;
+width: 70%;
+font-size: 1.5rem;
+}
+#quantity-input{
+  width:30%
+}
+
+.itemsDiv
+{
+    font-size: 1.5rem;
+    color:#af0e0e; 
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+  
+}
+.completed span {
+  color: green;
+  text-decoration: line-through;
+}
+
+@media(max-width:480px){
+  .groceries h1{
+    font-size: 1rem;
+  }
+  #txtItem{
+    font-size: 1rem;
+  }
+  .itemsDiv{
+    margin-left: 25px;
+    font-size: 1rem;
+  }
+  button{
+  
+    margin:0.25em ;
+    padding:0.25em ;
+  }
+  input{
+    padding: 0.25em;
+  }
+}
+
